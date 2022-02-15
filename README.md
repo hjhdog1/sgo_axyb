@@ -21,7 +21,7 @@ where
 * ``X, Y`` are the calibration results.
 
 ## Demos
-Demo codes are includes that generate sythetic datasets and run calibrations on the generated datasets.
+Demo codes are included that generate sythetic datasets and run calibrations on the generated datasets.
 * To generate a synthetic dataset, run ``main_dataGeneration_SE3.m``.
 * To run calibration on the generated dataset, run ``main_solve_AXYB_SE3.m``.
 
