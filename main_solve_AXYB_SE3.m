@@ -19,8 +19,8 @@ param.globalOptMethod = 2;      % stochastic global optimization with geometric 
 
 
 %% Display Result
-distX_geometric_SO3 = norm(so3(X_geometric(1:3,1:3) * X_true(1:3,1:3)'));
-distY_geometric_SO3 = norm(so3(Y_geometric(1:3,1:3) * Y_true(1:3,1:3)'));
+distX_geometric_SO3 = norm(LogSO3(X_geometric(1:3,1:3) * X_true(1:3,1:3)'));
+distY_geometric_SO3 = norm(LogSO3(Y_geometric(1:3,1:3) * Y_true(1:3,1:3)'));
 distX_geometric_trans = norm(X_geometric(1:3,4) - X_true(1:3,4));
 distY_geometric_trans = norm(Y_geometric(1:3,4) - Y_true(1:3,4));
 
