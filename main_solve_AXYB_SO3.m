@@ -19,8 +19,8 @@ param.globalOptMethod = 2;      % stochastic global optimization with geometric 
 
 
 %% Display Result
-distX_geometric_SO3 = norm(so3(X_geometric * X_true'));
-distY_geometric_SO3 = norm(so3(Y_geometric * Y_true'));
+distX_geometric_SO3 = norm(LogSO3(X_geometric * X_true'));
+distY_geometric_SO3 = norm(LogSO3(Y_geometric * Y_true'));
 
 disp('======= Geometric optimization ======');
 disp(['X is ', num2str(distX_geometric_SO3*180/pi), 'deg off from the ground truth.'])
